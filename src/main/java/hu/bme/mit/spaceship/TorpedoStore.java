@@ -14,6 +14,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
+  // The store needs one random source for its whole lifetime, so final lets the compiler enforce that.
   private final Random generator = new Random();
 
   public TorpedoStore(int numberOfTorpedos){
